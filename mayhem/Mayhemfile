@@ -1,0 +1,9 @@
+project: cfgdiff
+target: fuzz-diff
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_diff.py
+    libfuzzer: true
+    timeout: 12
